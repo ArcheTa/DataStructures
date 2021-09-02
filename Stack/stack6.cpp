@@ -24,7 +24,7 @@ bool isnum(char ch){
 }
 void evaluateexp(string exp){
     stack<int> st;
-    for(int i = 0; i < exp.size(); i++){
+    for(int i = 0; i <= 0; i++){
         if(exp[i] == ' ' || exp[i] == ',') continue;
         else if(isoperator(exp[i])){
             int operand1 = st.top(); st.pop();
@@ -50,9 +50,11 @@ void evaluateexp(string exp){
 
 
 int main(){
-    string exp = "100 200 *";
+    string exp = "2 5 *";
     //int result = 
     evaluateexp(exp);
     //cout<<"Postfix evaluation: "<<result;
     return 0;
 }
+
+/*To write the evaluation of prefix algorithm run loop from the right */
